@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="백재선 - 프로필 링크" />
+    <meta property="og:description" content="백재선 - 포트폴리오" />
+    <meta property="og:image" content="./mybac1234@cts.JPG" />
+    <title>백재선 - 프로필 링크</title>
+    
+    <!-- css style html에서 직접 지정하기 -->
+    <style>     
+
+        /* 폰트 정하기 */
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        *{
+            font-family:'Pretendard', serif;
+        }
+
+
+        body {
+            background-color: #44398A;
+        }
+        .profile {
+            width : 100px;
+            height: 100px;
+
+            /* background-color : green; */     
+            border-radius:100%;
+
+            border:2px solid white;
+
+            /* 사진 */
+            background-image : url('./mybac1234@cts.JPG');
+            background-position: center;
+            background-size: cover;
+        }
+        .main {
+            color : white;
+            font-size: 20px;
+
+            margin-top:30px;        /* 위로 마진을 줌 */
+            margin-bottom:10px;     /* 아래로 마진을 줌 */ 
+        }
+        .sub{
+            color:white;
+            font-size:14px;
+
+            margin-top : 0px;
+            margin-bottom : 30px;       /* 아래 메뉴와의 거리를 띄움 */
+        }
+        .wrap {
+            /* background-color : green; */
+            width:300px;
+            margin:30px auto 0px auto;      /* 가운데 정렬 */
+
+            /* display flex : 내부 요소를 중앙정렬 하는 방법 */
+            display : flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .wrap > a {
+            width:300px;
+            height:50px;
+
+            background-color: white;
+            border-radius: 8px;
+
+            margin-bottom:10px;
+
+            font-size:14;
+            font-weight: bold;
+            color: #44398A;
+
+            display : flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            text-decoration: none;
+
+            box-shadow: 3px 3px 5px 0px black;      /* 오른쪽방향 아래쪽방향 꼬리길이 꼬리선명도 색상 */
+        }
+        .wrap > a:hover {
+            background-color: #f2f2f2;      /* 마우스를 해당 태그에 올릴때, 음영이 지게 하는 것 */
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="profile"></div>
+        <h1 class="main">백재선</h1>
+        <p class="sub">유능한 데이터사이언티스트가 되고싶습니다.</p>
+
+        <!-- a 태그 - 하이퍼링크 설정하기 -->
+        <a target="_blank" href="https://github.com/newrandom">newrandom's 깃헙</a>
+        <a target="_blank" href="https://github.com/newrandom/Zero_part5_EDA-scrapping">EDA & Scrapping lecture git</a>
+        <a target="_blank" href="https://github.com/newrandom/ML_study">Machine Learning lecture git</a>
+        <a target="_blank" href="https://github.com/newrandom/DeepLearning_workspace">DeepLearning lecture git</a>
+        
+    </div>
+</body>
+</html>
